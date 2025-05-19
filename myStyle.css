@@ -1,0 +1,146 @@
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #4ECCA3;
+}
+
+p {
+    background-color: aqua;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+img {
+    max-width: 250px;
+    background-color: aqua;
+    margin-bottom: 15px;
+}
+
+* {
+    background-color: rgb(155, 155, 155);
+}
+
+
+.container {
+    /* border: 2px solid rgb(184, 184, 184); */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    
+}
+
+.container > .button {
+    align-content: center;
+    text-align: center;
+}
+
+#button {
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: black;
+    color: beige;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+#button1 {
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: rgb(98, 98, 98);
+    color: beige;
+    border-radius: 50px;
+    border: none;
+}
+
+#p1 {
+    flex-basis: 400px;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 15px;
+}
+
+#p2 {
+    flex-basis: 400px;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 15px;
+}
+
+.footer {
+    margin-top: 20px;
+    align-self: center;
+}
+
+@media (max-width: 700px) and (min-width: 400px) {
+    .container {
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        margin-left: 60px;
+        margin-right: 60px;
+        /* flex-basis: 10px; */
+    }
+     img {
+        max-width: 200px;
+    }
+    .container > h1 {
+        align-self: center;
+    }
+}
+
+@media (max-width: 400px) and (min-width: 300px) {
+    .container {
+        flex-direction: column;
+        margin-left: 35px;
+        margin-right: 35px;
+    
+        
+    }
+    img {
+        max-width: 200px;
+    }
+    .container > h1 {
+        align-self: center;
+    }
+}
+
+@media (max-width: 300px) {
+    .container {
+        flex-direction: column;
+    }
+    img {
+        max-width: 150px;
+    }
+    .container > h1 {
+        align-self: center;
+    }
+}
+
+/* animation  section */
+/* Define a CSS animation named "blink" */
+@keyframes blink {
+
+    0%,
+    100% {
+    background-color: #ff0000;
+    /* First color - red */
+    }
+
+    50% {
+    background-color: black;
+    /* Second color - black */
+    }
+}
+
+ /* Apply the "blink" animation to 
+elements with class "blinking-effect" */
+.blinking {
+    animation: blink 1s linear infinite;
+/* The animation will run indefinitely */
+    }
